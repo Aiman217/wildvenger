@@ -1,0 +1,298 @@
+/* CSS for display.php */
+body{
+  font-family: 'Roboto Mono', monospace;
+  margin: 0px;
+}
+
+.row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video{
+  margin: 0px;
+  padding: 0px;
+}
+
+.pix
+  {
+  position: relative;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  max-width: 100%;
+  background-color: black;
+  }
+
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 40px;
+  max-width: 100%;
+}
+
+.penyu{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15%;
+  position: absolute;
+  top: 0px;
+}
+
+.contentpenyu{
+  padding-top: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-bottom: 0%;
+}
+
+.textpenyu{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.rimau{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15%;
+  position: absolute;
+  top: 10px;
+  padding-bottom: 0%;
+}
+
+.contentrimau{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.textrimau{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.gajah{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15%;
+  position: absolute;
+  top: 10px;
+  padding-bottom: 0%;
+}
+
+.contentgajah{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.textgajah{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.tenggiling{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 0px;
+  padding-bottom: 0%;
+}
+
+.contenttenggiling{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.texttenggiling{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.bekantan{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10%;
+  position: absolute;
+  top: 33%;
+  padding-bottom: 0%;
+}
+
+.contentbekantan{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.textbekantan{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.badak{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 0px;
+  padding-left: 50px;
+}
+
+.contentbadak{
+  padding-top: 0px;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-bottom: 0%;
+}
+
+.textbadak{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  text-decoration: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  float: right;
+  }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+
+.button:hover span {
+  padding-right: 25px;
+  }
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+.but{
+  color: white;
+}
+
+.orangutan{
+  max-height: 100%;
+  padding-left: 0%;
+  padding-top: 36%;
+  position: absolute;
+  top: 0px;
+}
+
+.contentorangutan{
+  padding-top: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-bottom: 0%;
+}
+
+.textorangutan{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.align{
+  text-align: center;
+  background-color: #182628;
+  color: white;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shrew{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15%;
+  top: 0px;
+}
+
+.contentshrew{
+  background-color: #182628;
+}
+
+.textshrew{
+  background-color: white;
+  padding-left: 10px;
+}
+
+.column{
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.picnad img{
+  width: 70%;
+  transition: 1s;
+  filter: brightness(100%);
+  margin: 15px;
+}
+
+.bio{
+  grid-column: span 2;
+}
+
+.but{
+    color: white;
+}
+
+.banteng{
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15%;
+  position: absolute;
+  top: 0px;
+  padding-bottom: 0%;
+}
+
+.contentbanteng{
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.textbanteng{
+  background-color: white;
+  padding-left: 10px;
+  float: right;
+  grid-column: span 2 ;
+  position: absolute;
+}

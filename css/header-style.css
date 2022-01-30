@@ -1,0 +1,59 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+  margin: 0px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #04AA6D;
+}
+
+.top{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.top-left{
+  display: flex;
+}
+
+.top> .top-left > div {
+  margin-right: 20px;
+  font-size: 120%;
+}
+
+.top-left-me{
+  height: 80px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  padding-top: 50px;
+}
+
+.front{
+  border-bottom: 1px solid white;
+}
+
+.front a{
+  color: white !important;
+}
+
+.top-left-me a{
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top-left-me:hover{
+  border-bottom: 1px solid black;
+}
+
+.top-left-me a:hover{
+  color: black;
+}
+
+.top-right-me{
+  color: white;
+  font-size: 40px;
+  margin-top: 10px;
+}
