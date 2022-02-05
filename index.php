@@ -16,7 +16,7 @@
         <title>Wildvenger</title>
     </head>
     <body>
-        <!--hello-->
+        <!--welcome-->
       <div class = "topnav">
         <div class = "top">
           <div class = "top-left">
