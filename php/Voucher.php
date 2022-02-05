@@ -31,7 +31,7 @@
                 Zoo Negara
               </p>
               <div class="columnB-v">
-                <img class="v-plain" src="images/v50.png" style="width: 300px; height: auto;">
+                <img class="v-plain" src="../image/v50.png" style="width: 300px; height: auto;">
                 <div class="columnC-v">
                     <p class="exp2-t font-exp2-t">
                         • Only valid until 20th Desember 2022.
@@ -63,11 +63,8 @@
                 <div class="B">
                   <button class="button" onclick="window.location.href = '';"><span>Buy Now</span></button>
                 </div>
+              </div>
             </div>
-            </div>
-          </div>
-          <div class="B">
-            <button class="button" onclick="window.location.href = 'index.html';"><span>Home</span></button>
           </div>
       </div>
     </body>

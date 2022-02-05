@@ -31,7 +31,7 @@
           <div class="row">
             <div class="column">
               <div class="placebox">
-                <img class="imgs" src="images/langkawi1.jfif">
+                <img class="imgs" src="../image/langkawi1.jfif">
                 <p class="title">
                   Langkawi Wildlife
                 </p>
@@ -50,7 +50,7 @@
             </div>
             <div class="column">
               <div class="placebox">
-                <img class="imgs" src="images/zoonegara1.jpg">
+                <img class="imgs" src="../image/zoonegara1.jpg">
                 <p class="title">
                   Zoo Negara
                 </p>
@@ -69,7 +69,7 @@
             </div>
             <div class="column">
               <div class="placebox">
-                <img class="imgs" src="images/semenggoh1.jpg">
+                <img class="imgs" src="../image/semenggoh1.jpg">
                 <p class="title">
                   Semenggoh Wildlife
                 </p>
@@ -88,7 +88,7 @@
             </div>
             <div class="column">
               <div class="placebox">
-                <img class="imgs" src="images/langkawi1.jfif">
+                <img class="imgs" src="../image/langkawi1.jfif">
                 <p class="title">
                   Langkawi Wildlife
                 </p>
@@ -107,7 +107,7 @@
             </div>
             <div class="column">
               <div class="placebox">
-                <img class="imgs" src="images/zoonegara1.jpg">
+                <img class="imgs" src="../image/zoonegara1.jpg">
                 <p class="title">
                   Zoo Negara
                 </p>
@@ -126,7 +126,7 @@
             </div>
             <div class="column">
               <div class="placebox">
-                <img class="imgs" src="images/semenggoh1.jpg">
+                <img class="imgs" src="../image/semenggoh1.jpg">
                 <p class="title">
                   Semenggoh Wildlife
                 </p>
@@ -144,10 +144,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <br>
-        <div class="B">
-          <button class="button" onclick="window.location.href = 'index.html';"><span>Home</span></button>
         </div>
       </div>
     </body>
