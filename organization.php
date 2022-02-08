@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
+      <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon.png">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
       <meta charset="UTF-8">
       <meta class="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">

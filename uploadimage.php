@@ -6,7 +6,7 @@
   $msg = "";
 
   // If upload button is clicked ...
-  if (isset($_POST['upload']))s {
+  if (isset($_POST['upload'])) {
   	// Get image name
   	$image = $_FILES['image']['name'];
   	// Get text
