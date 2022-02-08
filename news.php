@@ -29,6 +29,9 @@
               <a href="index.php">HOME</a>
             </div>
             <div class = "top-left-me ">
+              <a href="login.php">LOGIN</a>
+            </div>
+            <div class = "top-left-me ">
               <a href="organization.php">ORGANIZATIONS</a>
             </div>
             <div class = "top-left-me ">
@@ -40,13 +43,10 @@
             <div class = "top-left-me ">
               <a href="forum.php">FORUM</a>
             </div>
-            <div class = "top-left-me ">
-              <a href="login.php">LOGIN</a>
             </div>
-          </div>
           <div class = "top-right">
             <div class = "top-right-me">
-              Wildvenger
+              Wildvenger Malaysia
             </div>
           </div>
         </div>
