@@ -4,14 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NEWS</title>
-        <link rel="stylesheet"href="css/style.css"type="text/css">
+        <link rel="stylesheet"href="css/news-style.css?t=[timestamp]"type="text/css">
+        <link href="css/header-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
+        <link href="css/footer-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
     </head>
     <body>
-    <div class="topic">
-        <h1>WILDVENGER MALAYSIA</h1>
-        <h2 class="aaa">NEWS IN MALAYSIA</h2>
-    </div>
-   
+    <div class = "topnav">
+        <div class = "top">
+          <div class = "top-left">
+            <div class = "top-left-me front">
+              <a href="index.php">HOME</a>
+            </div>
+            <div class = "top-left-me ">
+              <a href="organization.php">ORGANIZATIONS</a>
+            </div>
+            <div class = "top-left-me ">
+              <a href="explore.php">EXPLORE</a>
+            </div>
+            <div class = "top-left-me ">
+              <a href="news.php">NEWS</a>
+            </div>
+            <div class = "top-left-me ">
+              <a href="forum.php">FORUM</a>
+            </div>
+            <div class = "top-left-me ">
+              <a href="login.php">LOGIN</a>
+            </div>
+          </div>
+          <div class = "top-right">
+            <div class = "top-right-me">
+              Wildvenger
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="onoffswitch3">
         <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
         <label class="onoffswitch3-label" for="myonoffswitch3">
@@ -27,7 +53,7 @@
 
     <?php 
     session_start();
-    $sql = mysqli_connect("localhost", "root", "", "news");
+    $sql = mysqli_connect("localhost", "root", "", "anivenger");
     $database = "SELECT * FROM berita";
     $result= mysqli_query($sql,$database);
      ?>

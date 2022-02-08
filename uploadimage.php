@@ -1,12 +1,12 @@
 <?php
   // Create database connection
-  $db = mysqli_connect("localhost", "root", "", "news");
+  $db = mysqli_connect("localhost", "root", "", "anivenger");
 
   // Initialize message variable
   $msg = "";
 
   // If upload button is clicked ...
-  if (isset($_POST['upload'])) {
+  if (isset($_POST['upload']))s {
   	// Get image name
   	$image = $_FILES['image']['name'];
   	// Get text
