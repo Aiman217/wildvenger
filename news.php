@@ -7,11 +7,6 @@
         <link rel="stylesheet"href="css/style.css"type="text/css">
     </head>
     <body>
-    <div class="topic">
-        <h1>WILDVENGER MALAYSIA</h1>
-        <h2 class="aaa">NEWS IN MALAYSIA</h2>
-    </div>
-   
     <div class="onoffswitch3">
         <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
         <label class="onoffswitch3-label" for="myonoffswitch3">
