@@ -1,76 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" style="background-image: url(https://i.pinimg.com/originals/be/2a/94/be2a940c4ac312bf5abc0aa9677749de.jpg);">
     <head>
-      <meta charset="UTF-8">
-      <meta class="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link href="../css/explore-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
-      <link href="../css/header-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
-      <link href="../css/footer-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <title>Voucher</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WILDVENGER MALAYSIA</title>
+        <link rel="stylesheet"href="css/style.css"type="text/css">
     </head>
 
+    <!-- Navigation bar-->
+    <div class="bar-navi">
+        <a href="#" class="bar-item">WILDVENGER MALAYSIA</a>
+    </div>
+
     <!--The body of the page-->
-    <body>
-      <?php require "../php/header.php" ?>
+    <body onload='generateQRCode()'>
       <div class="main">
 
         <!--Tile of the page-->
         <a class="bar page-name ">PROMOTION</a>
 
-        <!--Information and buy tickets-->
+        <?php
+          $tokens = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+          $serial = '';
+              
+          for ($i = 0; $i < 10; $i++) {
+            $serial .= $tokens[rand(0, 35)];
+           }
+        ?>
+        <!--Receipt-->
         <div class="border  col-90">
-            <div class="placebox2  col-80">
-              <p class="title-t">
-                Zoo Negara
-              </p>
-              <div class="columnB-v">
-                <img class="v-plain" src="../image/v50.png" style="width: 300px; height: auto;">
-                <div class="columnC-v">
-                    <p class="exp2-t font-exp2-t">
-                        • Only valid until 20th Desember 2022.
-                    </p>
-                    <p class="exp2-t font-exp2-t">
-                        • Scanning the received QR/Bar code at the parking payment machine.
-                    </p>
-                    <p class="exp2-t font-exp2-t">
-                        • Only can be claim by Malaysian
-                    </p>
-                </div>
-              </div>
-              <div class="green2 col-90">
-                <p class="buy">Claim Voucher !</p>
-                <div class="buy-item col-70">
-                    <div class="columnB">
-                      <p class="exp2-t font-exp2-t">
-                        Name:
-                      </p>
-                      <input type="text" class="right" style="width: 230px;"></button>
-                    </div>
-                  <div class="columnB">
-                    <p class="exp2-t font-exp2-t">
-                      Email:
-                    </p>
-                    <input type="text" class="right" ></button>
-                  </div>
-                </div>
-                <div class="B">
-                  <button class="button" onclick="window.location.href = '';"><span>Buy Now</span></button>
-                </div>
-              </div>
+          <div class="placebox2  col-80">
+            <div class="columnB" style="display: flex;text-align: center;">
+              <h1>Scan QR Code to get the voucher Serial Number</h1>
             </div>
+            <div class="columnB" style="display: flex;">
+              <p id="qr-result"></p>
+              <canvas id="qr-code"></canvas>
+            </div><br>
+            <div class="columnB" style="font-family: 'Times New Roman'; font-weight:bold; font-size: 10px;display: flex;text-align: center;">
+              <h1>Serial Number Voucher : </h1>
+              <h1 id="qr-text" ><?php echo $serial; ?></h1>
+            </div>
+            <div class="columnB" style="font-family: 'Times New Roman'; font-weight:bold; font-size: 10px;display: flex;text-align: center;">
+              <h1>Place : Zoo Negara</h1>
+            </div>
+            <div class="columnB" style="font-family: 'Times New Roman'; font-weight:bold; font-size: 10px;display: flex;text-align: center;">
+              <h1>Discount : 50%</h1>
+            </div>
+            <div class="columnB" style="font-family: 'Times New Roman'; font-weight:bold; font-size: 10px;display: flex;text-align: center;">
+              <h1>Type : Entrance Discount</h1>
+            </div>
+            <?php
+              $tokens = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+              $serial = '';
+              
+              for ($i = 0; $i < 10; $i++) {
+                $serial .= $tokens[rand(0, 35)];
+              }
+            ?>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+              <script>
+                  /* JS comes here */
+                  var qr;
+                  (function() {
+                          qr = new QRious({
+                          element: document.getElementById('qr-code'),
+                          size: 200,
+                      });
+                  })();
+                  
+                  function generateQRCode() {
+                      var qrtext = <?php echo $serial; ?>;
+                      document.getElementById("qr-result").innerHTML = "QR code for " + qrtext +":";
+                      alert(qrtext);
+                      qr.set({
+                          foreground: 'black',
+                          size: 200,
+                          value: qrtext
+                      });
+                  }
+              </script>
           </div>
+        </div>
+        <div class="B">
+          <button class="button" onclick="window.location.href = 'MainAttraction.php';"><span>Home</span></button>
+        </div>
       </div>
     </body>
-    <footer>
-      <div class="footer">
-        <p>Wildvenger</p>
-      </div>
-    </footer>
 </html>
