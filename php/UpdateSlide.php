@@ -21,7 +21,7 @@
 
         <?php 
           session_start();
-          $sql_connection = mysqli_connect("localhost", "root",null,"promotion");
+          $sql_connection = mysqli_connect("localhost", "root",null,"anivenger");
           $database1 = "SELECT * FROM places";
           $Count=0;
           $_SESSION['place1']= 1;

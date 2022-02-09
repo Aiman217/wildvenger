@@ -14,7 +14,7 @@
 
     <?php 
       session_start();
-      $sql_connection = mysqli_connect("localhost", "root",null,"promotion");
+      $sql_connection = mysqli_connect("localhost", "root",null,"anivenger");
       $Count=0;
       $p1=1;
       $p2=2;

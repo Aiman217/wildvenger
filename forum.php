@@ -59,7 +59,7 @@
         <h1>Latest Comments</h1>
         <div class="comments">
           <?php
-            $sql ="SELECT * FROM forum ORDER BY msgID DESC";
+            $sql ="SELECT * FROM forum ORDER BY msgID ASC";
             $result = mysqli_query($link, $sql);
             if (mysqli_num_rows($result) > 0){
               while ($row = mysqli_fetch_assoc($result)){

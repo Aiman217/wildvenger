@@ -21,7 +21,7 @@
 
         <?php 
           session_start();
-          $sql_connection = mysqli_connect("localhost", "root",null,"promotion");
+          $sql_connection = mysqli_connect("localhost", "root",null,"anivenger");
           $database = "SELECT * FROM `receipt` WHERE ReceiptID=(SELECT MAX(ReceiptID) FROM `receipt`)";
           $database_sent = mysqli_query($sql_connection,$database); 
           $database_receive = mysqli_fetch_assoc($database_sent);

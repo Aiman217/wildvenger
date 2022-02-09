@@ -25,7 +25,7 @@
         <div class="container">
           <?php 
             session_start();
-            $sql_connection = mysqli_connect("localhost", "root",null,"promotion");
+            $sql_connection = mysqli_connect("localhost", "root",null,"anivenger");
             $database = "SELECT * FROM places";
             $Count=0;
             $database_sent = mysqli_query($sql_connection,$database);

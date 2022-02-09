@@ -22,7 +22,7 @@
         <?php 
             session_start();
             $id = 400001;
-            $sql_connection = mysqli_connect("localhost", "root",null,"promotion");
+            $sql_connection = mysqli_connect("localhost", "root",null,"anivenger");
             $database = "SELECT * FROM voucher";
             $Count=0;
             $database_sent = mysqli_query($sql_connection,$database);
