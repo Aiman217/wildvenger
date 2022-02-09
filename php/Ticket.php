@@ -8,7 +8,6 @@
         <meta charset="UTF-8">
         <meta class="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="css/homepage-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
         <link href="css/header-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
         <link href="css/footer-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
