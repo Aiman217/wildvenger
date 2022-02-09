@@ -37,7 +37,7 @@ body {
 }
 
 .register, .login {
-  max-width: 720px;
+  	max-width: 720px;
 	margin: 30px auto;
 	background: #04AA6D;
 	border-radius: 8px;
