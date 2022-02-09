@@ -6,8 +6,7 @@
         <link href="../css/header-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <title>Header file</title>
@@ -18,9 +17,9 @@
           <div class = "top-left">
             <div class = "top-left-me ">
               <a href="../index.php">HOME</a>
-              <div class = "top-left-me ">
-              <a href="../login.php">LOGIN</a>
             </div>
+            <div class = "top-left-me ">
+              <a href="../login.php">LOGIN</a>
             </div>
             <div class = "top-left-me ">
               <a href="../organization.php">ORGANIZATIONS</a>

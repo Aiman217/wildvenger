@@ -2,15 +2,22 @@
 <html lang="en" style="background-image: url(https://i.pinimg.com/originals/be/2a/94/be2a940c4ac312bf5abc0aa9677749de.jpg);">
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        <meta class="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/homepage-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
+        <link href="css/header-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
+        <link href="css/footer-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WILDVENGER MALAYSIA</title>
         <link rel="stylesheet"href="css/style.css"type="text/css">
     </head>
 
     <!-- Navigation bar-->
-    <div class="bar-navi">
-        <a href="#" class="bar-item">WILDVENGER MALAYSIA</a>
-    </div>
+    <?php require "../php/header.php" ?>
 
     <!--The body of the page-->
     <body>

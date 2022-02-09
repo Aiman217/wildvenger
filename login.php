@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" style ="margin: 0px">
   <head>
     <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon.png">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Login</title>
   </head>
-  <body>
+  <body style = "margin-bottom: 0px">
     <div class = "topnav">
       <div class = "top">
         <div class = "top-left">
