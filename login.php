@@ -32,7 +32,7 @@
             <a href="organization.php">ORGANIZATIONS</a>
           </div>
           <div class = "top-left-me ">
-            <a href="explore.php">EXPLORE</a>
+            <a href="MainAttraction.php">EXPLORE</a>
           </div>
           <div class = "top-left-me ">
             <a href="news.php">NEWS</a>
