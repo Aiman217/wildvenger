@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" style="background-image: url(https://i.pinimg.com/originals/be/2a/94/be2a940c4ac312bf5abc0aa9677749de.jpg);">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore</title>
+        <link rel="stylesheet"href="css/style.css"type="text/css">
+        <link rel="icon" type="image/png" sizes="16x16" href="photos/favicon.png">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WILDVENGER MALAYSIA</title>
-        <link rel="stylesheet"href="css/style.css"type="text/css">
+        <link rel="stylesheet"href="css/news-style.css?t=[timestamp]"type="text/css">
+        <link href="css/header-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
+        <link href="css/footer-style.css?t=[timestamp]" type="text/css" rel="stylesheet">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
 
     <!-- Navigation bar-->
-    <div class="bar-navi">
-        <a href="#" class="bar-item">WILDVENGER MALAYSIA</a>
-    </div>
+    <div class = "topnav">
+        <div class = "top">
+          <div class = "top-left">
+
+            <div class = "top-left-me " style = "height: 30px">
+              <a href="index.php">HOME</a>
+            </div>
+            <div class = "top-left-me " style = "height: 30px">
+              <a href="login.php">LOGIN</a>
+            </div>
+            <div class = "top-left-me " style = "height: 30px">
+              <a href="organization.php">ORGANIZATIONS</a>
+            </div>
+            <div class = "top-left-me front" style = "height: 30px">
+              <a href="MainAttraction.php">EXPLORE</a>
+            </div>
+            <div class = "top-left-me " style = "height: 30px">
+              <a href="news.php">NEWS</a>
+            </div>
+            <div class = "top-left-me " style = "height: 30px">
+              <a href="forum.php">FORUM</a>
+            </div>
+          </div>
+          <div class = "top-right">
+            <div class = "top-right-me">
+              Wildvenger Malaysia
+            </div>
+          </div>
+        </div>
+      </div>
 
     <?php 
       session_start();
-      $sql_connection = mysqli_connect("localhost", "root",null,"anivenger");
+      $sql_connection = mysqli_connect("localhost", "root", "", "anivenger");
       $Count=0;
       $p1=1;
       $p2=2;
@@ -22,6 +60,7 @@
       // $p1=$_SESSION['place1'];
       // $p2=$_SESSION['place2'];
       // $p3=$_SESSION['place3'];
+      
       $database1 = "SELECT * FROM places WHERE Name='$p1'";
       $database_sent1 = mysqli_query($sql_connection,$database1);
       $database_receive1 = mysqli_fetch_assoc($database_sent1);
@@ -121,7 +160,7 @@
                 </p>
                 <div class="B">
                   <?php $_SESSION['get_id']= $Count ?> 
-                  <button class="button" id ='$Count' onclick="window.location.href = 'php/Ticket.php';"><span>More Info</span></button>
+                  <button class="button" id ='$Count' onclick="window.location.href = 'Ticket.php';"><span>More Info</span></button>
                 </div>
               </div>
             </div>
@@ -136,7 +175,7 @@
         </div>
         <br>
         <div class="B">
-          <button class="button" onclick="window.location.href = 'php/VisitingPlace.php';"><span>See More</span></button>
+          <button class="button" onclick="window.location.href = 'VisitingPlace.php';"><span>See More</span></button>
         </div>
 
         <!--Voucher-->
@@ -153,7 +192,7 @@
               <div class="columnC">
               <?php echo "<img style='width:100%;' src='images/".$database_receive['Image']."' >"; ?>
                 <div class="B">
-                  <button class="button" onclick="window.location.href = 'php/MainVoucher.php';"><span>Claim</span></button>
+                  <button class="button" onclick="window.location.href = 'MainVoucher.php';"><span>Claim</span></button>
                 </div>
               </div>
             </div>
@@ -164,7 +203,7 @@
         </div>
       </div>
       <div class="B">
-        <button class="button" onclick="window.location.href = 'php/ManagePage.php';"><span>Manage Page</span></button>
+        <button class="button" onclick="window.location.href = 'ManagePage.php';"><span>Manage Page</span></button>
       </div>
     </body>
 </html>
